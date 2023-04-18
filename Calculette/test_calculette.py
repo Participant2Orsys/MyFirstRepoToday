@@ -1,4 +1,6 @@
 import pytest
+import time
+
 from calculette import Calculette, Error
 
 @pytest.fixture
@@ -8,6 +10,7 @@ def cal():
 
 def test_add(cal):
 	cal.add(1,2)
+	time.sleep(500)
 	assert cal.res == 3
 
 def test_div(cal):
