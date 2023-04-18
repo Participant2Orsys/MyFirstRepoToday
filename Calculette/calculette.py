@@ -4,7 +4,7 @@ class Error(Exception):
 class Calculette:
 
 	def __init__(self):
-		self.res = 0
+		self.res = 1
 
 	def add(self,a,b):
 		self.res = a + b
